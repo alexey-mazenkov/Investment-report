@@ -21,8 +21,8 @@ for i in range(1, term + 1):
         print()
         print(i, 'год')
         print("-------------------------------------------------")
-        print("|        | основа     | сумма %    |            |")
-        print("| месяц  | инвестиций | за месяц   | капитал    |")
+        print("|         | основа     | сумма %    |           |")
+        print("| месяц   | инвестиций | за месяц   | капитал   |")
         print("-------------------------------------------------")
 
     first_sum = all_sum                                                 # Variable for original amount
@@ -35,13 +35,13 @@ for i in range(1, term + 1):
         if i % year_output == 0 or i == term or i == 1:                 # If in order to display a table
             str_1 = str("%.2f" % (first_sum))                           # Strings for table output
             len_1 = 12 - len(str_1)
-            str_2 = str(j)
+            str_2 = str(j+1)
             len_2 = 5 - len(str_2)
             str_3 = str("%.2f" % (accruals))
             len_3 = 12 - len(str_3)
             str_4 = str("%.2f" % (all_sum))
             len_4 = 11 - len(str_4)
-            print("|", " " * len_2, j, " " * 4, "|", str_1, " " * len_1, sep="", end="")
+            print("|", " " * len_2, j+1, " " * 4, "|", str_1, " " * len_1, sep="", end="")
             print("|", str_3, " " * len_3, "|", str_4, " " * len_4, "|", sep="", end="")
             print()
 
