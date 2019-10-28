@@ -1,10 +1,7 @@
 # Investment report.
-# Developers: A. Mazenkov -,
+# Developers: A. Mazenkov - 40 %,
 # A. Mikhailov - ,
 # K. Kravtsov - 45%
-
-# Разработать программу, позволяющую получать информацию за каждый месяц об инвестициях капитала в течение нескольких
-# лет при ежемесячной капитализации.
 
 import localization as lc
 
