@@ -5,11 +5,11 @@
 
 import localization as lc
 
-term = int(input(lc.term))                    # Input period.
-initial_capital = float(input(lc.initial))                # Initial capital input.
-percent = float(input(lc.percent))                   # Input interest rate.
-infusion = float(input(lc.infusion))            # Input additional investments.
-year_output = float(input(lc.year_output))       # Input output step.
+term = int(input(lc.term))                                              # Input period.
+initial_capital = float(input(lc.initial))                              # Initial capital input.
+percent = float(input(lc.percent))                                      # Input interest rate.
+infusion = float(input(lc.infusion))                                    # Input additional investments.
+year_output = float(input(lc.year_output))                              # Input output step.
 
 all_sum = initial_capital
 
