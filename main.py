@@ -6,11 +6,13 @@
 # Разработать программу, позволяющую получать информацию за каждый месяц об инвестициях капитала в течение нескольких
 # лет при ежемесячной капитализации.
 
-term = int(input("Срок размещения капитала (лет):"))                    # Input period.
-initial_capital = float(input("Начальный капитал ($):"))                # Initial capital input.
-percent = float(input("Процентная ставка (%/мес.):"))                   # Input interest rate.
-infusion = float(input("Инвестиционные вливания ($/мес.):"))            # Input additional investments.
-year_output = float(input("Раз в сколько лет выводить депозит:"))       # Input output step.
+import localization as lc
+
+term = int(input(lc.term))                    # Input period.
+initial_capital = float(input(lc.initial))                # Initial capital input.
+percent = float(input(lc.percent))                   # Input interest rate.
+infusion = float(input(lc.infusion))            # Input additional investments.
+year_output = float(input(lc.year_output))       # Input output step.
 
 all_sum = initial_capital
 
@@ -19,11 +21,8 @@ for i in range(1, term + 1):
 
     if i % year_output == 0 or i == term or i == 1:
         print()
-        print(i, 'год')
-        print("-------------------------------------------------")
-        print("|         | основа     | сумма %    |           |")
-        print("| месяц   | инвестиций | за месяц   | капитал   |")
-        print("-------------------------------------------------")
+        print(i, lc.year)
+        print(lc.table)
 
     first_sum = all_sum                                                 # Variable for original amount
 
