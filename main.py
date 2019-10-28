@@ -1,6 +1,6 @@
 # Investment report.
 # Developers: A. Mazenkov - 40 %,
-# A. Mikhailov - ,
+# A. Mikhailov - 35 %,
 # K. Kravtsov - 45%
 
 import localization as lc
